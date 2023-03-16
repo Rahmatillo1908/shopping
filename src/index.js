@@ -1,0 +1,19 @@
+import React from 'react';
+import './index.css';
+import ReactDOM from 'react-dom/client';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
+import Project1 from './New/Project1'
+import { BrowserRouter } from "react-router-dom"
+import { Provider } from 'react-redux';
+import store from './New/Redux/store';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+  <Provider store={store} >
+    <Project1 />
+  </Provider>
+  </BrowserRouter>
+);
+
